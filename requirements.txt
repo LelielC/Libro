@@ -1,5 +1,7 @@
 jupyter-book
 matplotlib
 numpy
-pandas
 pre-commit
+pandas
+openpyxl
+scipy

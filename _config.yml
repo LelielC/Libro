@@ -35,7 +35,7 @@ sphinx:
   - sphinx_inline_tabs
   - sphinx_click.ext
   - sphinx_proof
-  - sphinx-autobuild
+
   config:
     bibtex_reference_style: author_year
     html_js_files:
