@@ -1,7 +1,10 @@
 jupyter-book
+opencv-python
+seaborn
 matplotlib
 numpy
 pre-commit
 pandas
 openpyxl
 scipy
+plotly
