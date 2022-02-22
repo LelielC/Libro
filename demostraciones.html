@@ -289,10 +289,7 @@
         
               <div>
                 
-  <figure>
-<img src="../Imagenes/logo-final-ap.png"  width="80" height="80" align="left"/> 
-</figure>
-<div class="tex2jax_ignore mathjax_ignore section" id="span-style-color-blue-left-aprendizaje-profundo-left-span">
+  <div class="tex2jax_ignore mathjax_ignore section" id="span-style-color-blue-left-aprendizaje-profundo-left-span">
 <h1><span style="color:blue"><left>Aprendizaje Profundo</left></span><a class="headerlink" href="#span-style-color-blue-left-aprendizaje-profundo-left-span" title="Permalink to this headline">¶</a></h1>
 </div>
 <div class="tex2jax_ignore mathjax_ignore section" id="span-style-color-red-center-vision-por-computadora-center-span">
@@ -359,12 +356,12 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_18248</span><span class="o">/</span><span class="mf">1172371042.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span> 
-<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="c1"># se muestra el output de la cámara web</span>
-<span class="ne">---&gt; </span><span class="mi">19</span>     <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;QRCODEscanner&quot;</span><span class="p">,</span> <span class="n">img</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="c1"># si se usa la tecla &quot;q&quot;, se parará el loop</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span>     <span class="k">if</span> <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s2">&quot;q&quot;</span><span class="p">):</span>
+<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_10020</span><span class="o">/</span><span class="mf">1172371042.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> 
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># detección y decodificación del QR</span>
+<span class="ne">---&gt; </span><span class="mi">11</span>     <span class="n">data</span><span class="p">,</span> <span class="n">points</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">detector</span><span class="o">.</span><span class="n">detectAndDecode</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>    <span class="c1"># Busca si hay un QR en la cámara y paramos el loop si hay un QR</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>     <span class="k">if</span> <span class="n">data</span><span class="p">:</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
