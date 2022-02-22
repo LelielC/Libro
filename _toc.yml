@@ -4,9 +4,4 @@
 format: jb-book
 root: intro
 chapters:
-- file: py4
-- file: py7
-- file: prob4
-- file: tabs
 - file: demostraciones
-- file: PruebasTabs
