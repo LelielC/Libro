@@ -10,6 +10,7 @@ jobs:
       - image: circleci/python:3.7-stretch
     steps:
       - checkout
+      - run: pip install sphinx_inline_tabs
       - run: pip install --user -r requirements.txt
       - run:
           name: Build site intermediate files
@@ -54,7 +55,6 @@ jobs:
       - run:
           name: Deploying site using ghp-import
           command: |
-            pip install sphinx_inline_tabs
             pip install ghp-import
             ghp-import -p -f -n ./_site/
 
