@@ -1,4 +1,6 @@
 jupyter-book
+docutils
+sphinx_inline_tabs
 opencv-python-headless
 seaborn
 matplotlib
