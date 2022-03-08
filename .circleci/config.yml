@@ -11,6 +11,7 @@ jobs:
     steps:
       - checkout
       - run: pip install sphinx_inline_tabs
+      - run: pip install sphinx_click
       - run: pip install --user -r requirements.txt
       - run:
           name: Build site intermediate files
