@@ -10,6 +10,7 @@ jobs:
       - image: circleci/python:3.7-stretch
     steps:
       - checkout
+      - run: pip install bundle
       - run: pip install sphinx_inline_tabs
       - run: pip install sphinx_click
       - run: pip install sphinx_proof
