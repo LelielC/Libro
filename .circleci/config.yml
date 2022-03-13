@@ -45,9 +45,9 @@ jobs:
       - image: circleci/python:3.7-stretch
     steps:
       # Add deployment key fingerprint for CircleCI to use for a push
-      - add_ssh_keys:
-          fingerprints:
-            - "{{ YOUR SSH FINGERPRINT }}"
+      #- add_ssh_keys:
+          #fingerprints:
+            #- "{{ YOUR SSH FINGERPRINT }}"
 
       - prepare_jekyll_installation
       - run:
@@ -95,7 +95,7 @@ commands:
       - checkout
       - attach_workspace:
           # Must be absolute path or relative path from working_directory
-          at: /tmp/workspace
+          at: https://github.com/LelielC/Libro
 
       # Grab the the built intermediate files from the last step
       - run:
