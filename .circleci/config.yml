@@ -85,7 +85,7 @@ workflows:
           filters:
               branches:
                 only:
-                  - master
+                  - main
                 ignore:
                   - gh-pages
 
@@ -112,7 +112,7 @@ commands:
             source $BASH_ENV
             hash -r
             wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.11.0-Windows-x86_64.exe -O miniconda.exe
-            bash miniconda.sh -b -f -p $MINICONDA
+            bash miniconda.exe -b -f -p $MINICONDA
             conda config --set always_yes yes
             conda update conda
             conda info -a
