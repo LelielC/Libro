@@ -21,7 +21,7 @@ jobs:
 
       # Persist the built files for the deploy step
       - persist_to_workspace:
-          root: .
+          root: https://github.com/LelielC/Libro
           paths:
             - _build/
 
@@ -102,7 +102,7 @@ commands:
           name: Copy over built site files
           command: |
             rm -rf ./_build
-            cp -r /tmp/workspace/_build .
+            cp -r https://github.com/LelielC/Libro/_build .
 
       # Install miniconda to test install
       - run:
