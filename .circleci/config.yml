@@ -30,13 +30,13 @@ jobs:
           fingerprints:
             - "<my-public-fingerprint>"
       - run:
-          name: Push to gh-pages (if on master)
+          name: Push to gh-pages (if on main)
           command: |
-            if [ $CIRCLE_BRANCH	== "master" ]; then
+            if [ $CIRCLE_BRANCH	== "main" ]; then
               pip3 install ghp-import
               ghp-import -n -f -p mybook/_site;
             else
-              echo "Skipping deploy because we aren't on master"
+              echo "Skipping deploy because we aren't on main"
             fi
 
 
