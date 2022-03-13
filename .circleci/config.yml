@@ -112,7 +112,7 @@ commands:
             echo "export PATH=$MINICONDA/bin:$PATH" >> $BASH_ENV
             source $BASH_ENV
             hash -r
-            wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+            wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.11.0-Windows-x86_64.exe -O miniconda.exe
             bash miniconda.sh -b -f -p $MINICONDA
             conda config --set always_yes yes
             conda update conda
