@@ -51,13 +51,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Taller de manejo de Datos en Pandas" href="py7.html" />
+    <link rel="prev" title="Aprendizaje Profundo" href="demostraciones.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -101,13 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="demostraciones.html">
    <span style="color:blue">
     <left>
      Aprendizaje Profundo
     </left>
+   </span>
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Inspección, Instalación y Carga de Módulos y Paquetes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="py7.html">
+   <span style="color:#F72585">
+    Taller de manejo de Datos en Pandas
    </span>
   </a>
  </li>
@@ -347,8 +359,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python 3.9.3
- 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python 3.9.3 
 </pre></div>
 </div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;conda&quot; no se reconoce como un comando interno o externo,
@@ -449,189 +460,6 @@ The matplotlib.compat module was deprecated in Matplotlib 3.3 and will be remove
   __import__(info.name)
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\user\appdata\local\programs\python\python39\lib\site-packages\pyglet\image\codecs\wic.py:289: UserWarning:
-
-[WinError -2147417850] No se puede cambiar el modo de subproceso después de establecerlo
-
-c:\users\user\appdata\local\programs\python\python39\lib\site-packages\pyglet\media\codecs\wmf.py:838: UserWarning:
-
-[WinError -2147417850] No se puede cambiar el modo de subproceso después de establecerlo
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\user\appdata\local\programs\python\python39\lib\site-packages\rpy2\robjects\packages.py:366: UserWarning:
-
-The symbol &#39;quartz&#39; is not in this R namespace/package.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\user\appdata\local\programs\python\python39\lib\site-packages\setuptools\distutils_patch.py:25: UserWarning:
-
-Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools&#39; objects directly or at least import Setuptools first.
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>c:\users\user\appdata\local\programs\python\python39\lib\pkgutil.py:108: VisibleDeprecationWarning:
-
-zmq.eventloop.minitornado is deprecated in pyzmq 14.0 and will be removed.
-    Install tornado itself to use zmq with the tornado IOLoop.
-    
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>IPython             cmath               metakernel          sphinx_jupyterbook_latex
-PIL                 cmd                 mimetypes           sphinx_multitoc_numbering
-__future__          code                mistune             sphinx_panels
-_abc                codecs              mmap                sphinx_proof
-_aix_support        codeop              mmapfile            sphinx_thebe
-_ast                collections         mmsystem            sphinx_togglebutton
-_asyncio            colorama            moderngl            sqlalchemy
-_bisect             colorsys            moderngl_window     sqlite3
-_blake2             colour              modulefinder        sre_compile
-_bootlocale         commctrl            mpu                 sre_constants
-_bootsubprocess     commonmark          msilib              sre_parse
-_brotli             compileall          msvcrt              srt
-_bz2                concurrent          multipledispatch    srt_tools
-_cffi_backend       conf                multiprocessing     ssl
-_codecs             configparser        myst_nb             sspi
-_codecs_cn          contextlib          myst_parser         sspicon
-_codecs_hk          contextvars         nbclassic           stat
-_codecs_iso2022     cookiecutter        nbclient            statistics
-_codecs_jp          copy                nbconvert           storemagic
-_codecs_kr          copyreg             nbdime              string
-_codecs_tw          crypt               nbformat            stringprep
-_collections        cssselect2          nbgitpuller         struct
-_collections_abc    csv                 nest_asyncio        subprocess
-_compat_pickle      ctypes              netbios             sunau
-_compression        curses              netrc               svgwrite
-_contextvars        cv2                 networkx            symbol
-_csv                cycler              nntplib             sympyprinting
-_ctypes             cythonmagic         nodeenv             symtable
-_ctypes_test        dash                notebook            sys
-_datetime           dash_core_components nt                  sysconfig
-_decimal            dash_html_components ntpath              tabnanny
-_elementtree        dash_table          ntsecuritycon       tarfile
-_functools          dataclasses         nturl2path          telnetlib
-_hashlib            datetime            numbers             tempfile
-_heapq              dateutil            numpy               tenacity
-_imp                dbi                 odbc                terminado
-_io                 dbm                 opcode              test
-_json               dde                 openpyxl            testpath
-_locale             debugpy             operator            tests
-_lsprof             decimal             optparse            text_unidecode
-_lzma               decorator           os                  textwrap
-_markupbase         defusedxml          packaging           this
-_md5                difflib             pandas              threading
-_msi                dis                 pandocfilters       time
-_multibytecodec     distlib             parser              timeit
-_multiprocessing    distutils           parso               timer
-_opcode             doctest             pathlib             tinycss2
-_operator           docutils            pathops             tkinter
-_osx_support        easy_install        pdb                 tlz
-_overlapped         email               perfmon             token
-_peg_parser         encodings           pexpect             tokenize
-_pickle             ensurepip           pickle              toml
-_plotly_future_     entrypoints         pickleshare         toolz
-_plotly_utils       enum                pickletools         tornado
-_py_abc             errno               pip                 tqdm
-_pydecimal          et_xmlfile          pipes               trace
-_pyio               faulthandler        pkg_resources       traceback
-_pyrsistent_version ffmpeg              pkgutil             tracemalloc
-_queue              filecmp             platform            traitlets
-_random             fileinput           platformdirs        tty
-_rinterface_cffi_abi filelock            plistlib            turtle
-_sha1               flask               plotly              turtledemo
-_sha256             flask_compress      plotlywidget        types
-_sha3               fnmatch             poplib              typing
-_sha512             formatter           posixpath           typing_extensions
-_signal             fractions           poyo                tzdata
-_sitebuiltins       ftplib              pprint              tzlocal
-_socket             functools           pre_commit          uc_micro
-_sqlite3            gc                  profile             unicodedata
-_sre                genericpath         prometheus_client   unittest
-_ssl                getopt              prompt_toolkit      urllib
-_stat               getpass             pstats              urllib3
-_statistics         gettext             psutil              uu
-_string             git                 pty                 uuid
-_strptime           gitdb               ptyprocess          venv
-_struct             glcontext           pvectorc            virtualenv
-_symtable           glob                py_compile          warnings
-_testbuffer         graphlib            pybtex              watchdog
-_testcapi           greenlet            pybtex_docutils     wave
-_testconsole        gzip                pyclbr              wcwidth
-_testimportmultiple hashlib             pycparser           weakref
-_testinternalcapi   heapq               pydata_sphinx_theme webbrowser
-_testmultiphase     hmac                pydoc               webencodings
-_thread             html                pydoc_data          websocket
-_threading_local    http                pydub               werkzeug
-_tkinter            identify            pyexpat             wheel
-_tracemalloc        idlelib             pyglet              widgetsnbextension
-_uuid               idna                pygments            win2kras
-_warnings           imagesize           pylab               win32api
-_weakref            imaplib             pyparsing           win32clipboard
-_weakrefset         imghdr              pyrr                win32com
-_win32sysloader     imp                 pyrsistent          win32con
-_winapi             importlib           pythoncom           win32console
-_winxptheme         importlib_metadata  pytz                win32cred
-_xxsubinterpreters  inexactsearch       pytz_deprecation_shim win32crypt
-_yaml               inspect             pywin               win32cryptcon
-_zoneinfo           io                  pywin32_bootstrap   win32event
-abc                 ipaddress           pywin32_testutil    win32evtlog
-adodbapi            ipykernel           pywintypes          win32evtlogutil
-afxres              ipykernel_launcher  queue               win32file
-aifc                ipympl              quopri              win32gui
-alabaster           ipyparallel         random              win32gui_struct
-altair              ipython_genutils    rasutil             win32help
-animatplot          ipywidgets          re                  win32inet
-ansi2html           isapi               regcheck            win32inetcon
-antigravity         isosurfaces         regutil             win32job
-anyio               itertools           reprlib             win32lz
-argon2              itsdangerous        requests            win32net
-argparse            jedi                retrying            win32netcon
-array               jinja2              rich                win32pdh
-arrow               jinja2_time         rlcompleter         win32pdhquery
-ast                 json                rmagic              win32pdhutil
-asynchat            json5               rpy2                win32pipe
-asyncio             jsonschema          runpy               win32print
-asyncore            jupyter             sched               win32process
-atexit              jupyter_book        scipy               win32profile
-attr                jupyter_cache       screeninfo          win32ras
-audioop             jupyter_client      seaborn             win32rcparser
-autoreload          jupyter_core        secrets             win32security
-babel               jupyter_dash        select              win32service
-backcall            jupyter_server      selectors           win32serviceutil
-backports           jupyter_server_mathjax send2trash          win32timezone
-base64              jupyter_sphinx      servicemanager      win32trace
-bdb                 jupyterlab          setup               win32traceutil
-binaryornot         jupyterlab_plotly   setuptools          win32transaction
-binascii            jupyterlab_pygments shelve              win32ts
-binhex              jupyterlab_server   shlex               win32ui
-bisect              jupyterlab_spellchecker shutil              win32uiole
-bleach              jupyterlab_widgets  signal              win32verstamp
-bokeh               jupytext            silpa_common        win32wnet
-brotli              keyword             site                winerror
-bs4                 kiwisolver          six                 winioctlcon
-builtins            latexcodec          slugify             winnt
-bz2                 lib2to3             smmap               winperf
-cProfile            linecache           smtpd               winpty
-cairo               linkify_it          smtplib             winreg
-cairocffi           livereload          sndhdr              winsound
-cairosvg            locale              sniffio             winxpgui
-calendar            logging             snowballstemmer     winxptheme
-calysto             lzma                socket              wsgiref
-certifi             mailbox             socketserver        xdrlib
-cffi                mailcap             soundex             xml
-cfg_load            manim               soupsieve           xmlrpc
-cfgv                manimpango          spellchecker        xxsubtype
-cgi                 mapbox_earcut       sphinx              yaml
-cgitb               markdown_it         sphinx_autobuild    zipapp
-chardet             markupsafe          sphinx_book_theme   zipfile
-charset_normalizer  marshal             sphinx_click        zipimport
-chunk               math                sphinx_comments     zipp
-click               matplotlib          sphinx_copybutton   zlib
-click_default_group matplotlib_inline   sphinx_external_toc zmq
-cloup               mdit_py_plugins     sphinx_inline_tabs  zoneinfo
-
-Enter any module name to get more help.  Or, type &quot;modules spam&quot; to search
-for modules whose name or summary contain the string &quot;spam&quot;.
-</pre></div>
-</div>
 </div>
 </div>
 <p>Parece que es una lista bastante larga…</p>
@@ -655,73 +483,6 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;BPF&#39;,
- &#39;LOG4&#39;,
- &#39;NV_MAGICCONST&#39;,
- &#39;RECIP_BPF&#39;,
- &#39;Random&#39;,
- &#39;SG_MAGICCONST&#39;,
- &#39;SystemRandom&#39;,
- &#39;TWOPI&#39;,
- &#39;_Sequence&#39;,
- &#39;_Set&#39;,
- &#39;__all__&#39;,
- &#39;__builtins__&#39;,
- &#39;__cached__&#39;,
- &#39;__doc__&#39;,
- &#39;__file__&#39;,
- &#39;__loader__&#39;,
- &#39;__name__&#39;,
- &#39;__package__&#39;,
- &#39;__spec__&#39;,
- &#39;_accumulate&#39;,
- &#39;_acos&#39;,
- &#39;_bisect&#39;,
- &#39;_ceil&#39;,
- &#39;_cos&#39;,
- &#39;_e&#39;,
- &#39;_exp&#39;,
- &#39;_floor&#39;,
- &#39;_inst&#39;,
- &#39;_log&#39;,
- &#39;_os&#39;,
- &#39;_pi&#39;,
- &#39;_random&#39;,
- &#39;_repeat&#39;,
- &#39;_sha512&#39;,
- &#39;_sin&#39;,
- &#39;_sqrt&#39;,
- &#39;_test&#39;,
- &#39;_test_generator&#39;,
- &#39;_urandom&#39;,
- &#39;_warn&#39;,
- &#39;betavariate&#39;,
- &#39;choice&#39;,
- &#39;choices&#39;,
- &#39;expovariate&#39;,
- &#39;gammavariate&#39;,
- &#39;gauss&#39;,
- &#39;getrandbits&#39;,
- &#39;getstate&#39;,
- &#39;lognormvariate&#39;,
- &#39;normalvariate&#39;,
- &#39;paretovariate&#39;,
- &#39;randbytes&#39;,
- &#39;randint&#39;,
- &#39;random&#39;,
- &#39;randrange&#39;,
- &#39;sample&#39;,
- &#39;seed&#39;,
- &#39;setstate&#39;,
- &#39;shuffle&#39;,
- &#39;triangular&#39;,
- &#39;uniform&#39;,
- &#39;vonmisesvariate&#39;,
- &#39;weibullvariate&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 <p>Vaya que la lista sigue siendo larga…</p>
 <p>Sigamos metiendo dentro de cada cosa (algún día llegaremos al fin…no?)</p>
@@ -740,11 +501,6 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Número aleatorio en [0,1]:  0.7705196225225056
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -757,11 +513,6 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número entero aleatorio entre 3 y 6: &quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Número entero aleatorio entre 3 y 6:  3
 </pre></div>
 </div>
 </div>
@@ -789,73 +540,6 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;__doc__&#39;,
- &#39;__loader__&#39;,
- &#39;__name__&#39;,
- &#39;__package__&#39;,
- &#39;__spec__&#39;,
- &#39;acos&#39;,
- &#39;acosh&#39;,
- &#39;asin&#39;,
- &#39;asinh&#39;,
- &#39;atan&#39;,
- &#39;atan2&#39;,
- &#39;atanh&#39;,
- &#39;ceil&#39;,
- &#39;comb&#39;,
- &#39;copysign&#39;,
- &#39;cos&#39;,
- &#39;cosh&#39;,
- &#39;degrees&#39;,
- &#39;dist&#39;,
- &#39;e&#39;,
- &#39;erf&#39;,
- &#39;erfc&#39;,
- &#39;exp&#39;,
- &#39;expm1&#39;,
- &#39;fabs&#39;,
- &#39;factorial&#39;,
- &#39;floor&#39;,
- &#39;fmod&#39;,
- &#39;frexp&#39;,
- &#39;fsum&#39;,
- &#39;gamma&#39;,
- &#39;gcd&#39;,
- &#39;hypot&#39;,
- &#39;inf&#39;,
- &#39;isclose&#39;,
- &#39;isfinite&#39;,
- &#39;isinf&#39;,
- &#39;isnan&#39;,
- &#39;isqrt&#39;,
- &#39;lcm&#39;,
- &#39;ldexp&#39;,
- &#39;lgamma&#39;,
- &#39;log&#39;,
- &#39;log10&#39;,
- &#39;log1p&#39;,
- &#39;log2&#39;,
- &#39;modf&#39;,
- &#39;nan&#39;,
- &#39;nextafter&#39;,
- &#39;perm&#39;,
- &#39;pi&#39;,
- &#39;pow&#39;,
- &#39;prod&#39;,
- &#39;radians&#39;,
- &#39;remainder&#39;,
- &#39;sin&#39;,
- &#39;sinh&#39;,
- &#39;sqrt&#39;,
- &#39;tan&#39;,
- &#39;tanh&#39;,
- &#39;tau&#39;,
- &#39;trunc&#39;,
- &#39;ulp&#39;]
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="span-style-color-4361ee-aplicacion-span">
@@ -870,11 +554,6 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 <span class="n">r</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>          <span class="c1"># Declarar el radio</span>
 <span class="n">z</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># Escribir la fórmula matemática</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El Área del círculo es: &quot;</span><span class="p">,</span><span class="n">z</span><span class="p">,</span><span class="s2">&quot;cm²&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El Área del círculo es:  314.1592653589793 cm²
 </pre></div>
 </div>
 </div>
@@ -901,25 +580,10 @@ for modules whose name or summary contain the string &quot;spam&quot;.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>314.1592653589793
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">math</span><span class="o">.</span><span class="n">pi</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">~</span>\<span class="n">AppData</span>\<span class="n">Local</span>\<span class="n">Temp</span><span class="o">/</span><span class="n">ipykernel_13760</span><span class="o">/</span><span class="mf">929699079.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span>
-
-<span class="ne">NameError</span>: name &#39;math&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -1068,7 +732,21 @@ for modules whose name or summary contain the string &quot;spam&quot;.
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="demostraciones.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title"><span style="color:blue"><left>Aprendizaje Profundo</left></span></p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="py7.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span style="color:#F72585">Taller de manejo de Datos en Pandas</span></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
         
         </div>
