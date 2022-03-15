@@ -2,18 +2,14 @@ name: "Pull Request Docs Check"
 on: 
   push:
     branches: [main]
-jobs: 
-  dependencies:
+ jobs:
+  docs:
+    runs-on: ubuntu-latest
     steps:
     - run: pip install sphinx_inline_tabs
     - run: pip install sphinx_click
     - run: pip install sphinx_proof
     - run: pip install --user -r requirements.txt
-
-jobs:
-  docs:
-    runs-on: ubuntu-latest
-    steps:
     - uses: actions/checkout@v1
     - uses: ammaraskar/sphinx-action@master
       with:
