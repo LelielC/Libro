@@ -3,7 +3,8 @@ on:
   push:
     branches: [main]
 jobs: 
-  - name: dependencies
+  dependencies:
+    steps:
     - run: pip install sphinx_inline_tabs
     - run: pip install sphinx_click
     - run: pip install sphinx_proof
