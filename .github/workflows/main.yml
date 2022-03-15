@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ gh-pages ]
+    branches: [ main ]
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,6 +27,7 @@ jobs:
           
       #Sincroniza todos los archivos
       #- run: aws s3 sync ./_build s3://${{secrets.AWS_S3_BUCKET}} --delete
-      
+      # Construcción
+      - run: jupyter-book config sphinx .
       #sincroniza solo un archivo
       - run: aws s3 sync ./_build s3://${{secrets.AWS_S3_BUCKET}} --exclude='*' --include='intro.html'
